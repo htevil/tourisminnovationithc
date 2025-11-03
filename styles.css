@@ -1,0 +1,584 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+}
+
+.header-logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img{
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    margin-left: 5px;
+}
+
+.header-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #000000;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.header-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.5em;
+    color: #000000;
+    width: 100%;
+    height: fit-content;
+    margin-top: 0;
+}
+
+.header-nav {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #000000;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.nav-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    transition: opacity 0.3s;
+}
+
+.nav-button:hover {
+    opacity: 0.9;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 717px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section Styles */
+.section {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.333em;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0;
+}
+
+.section-paragraph {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.667em;
+    color: #000000;
+    width: 100%;
+}
+
+/* About Section */
+.about-section .section-paragraph {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.667em;
+}
+
+/* Button Primary */
+.button-primary {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    width: fit-content;
+    transition: opacity 0.3s;
+}
+
+.button-primary:hover {
+    opacity: 0.9;
+}
+
+/* Conferences Section */
+.conferences-section {
+    padding: 50px 100px;
+}
+
+.conferences-paragraph {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.subsection-title {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #000000;
+    margin: 0;
+}
+
+.conference-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+}
+
+.conference-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.conference-card-title {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #000000;
+    margin: 0;
+}
+
+.conference-detail {
+    display: flex;
+    width: 100%;
+}
+
+
+.detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+.detail-label {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #000000;
+}
+
+.detail-label-small {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #000000;
+}
+
+.detail-value {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #828282;
+}
+
+/* Journals Section */
+.journals-section {
+    padding: 50px 100px;
+}
+
+.journals-title {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.253em;
+    letter-spacing: -0.02em;
+    width: 1360px;
+    max-width: 100%;
+}
+
+.journals-section .section-paragraph {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.journal-cards-current {
+    display: flex;
+    gap: 10px;
+}
+
+.journal-cards-previous {
+    display: flex;
+    gap: 25px;
+}
+
+.journal-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    padding: 12.5px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.journal-card-title {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #000000;
+    margin: 0;
+}
+
+.previous-issues-title {
+    margin-top: 25px;
+}
+
+.button-journals {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Membership Section */
+.membership-section {
+    padding: 75px 100px 100px;
+}
+
+.membership-title {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.253em;
+    letter-spacing: -0.02em;
+}
+
+.membership-paragraph {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6em;
+    width: 1200px;
+    max-width: 100%;
+}
+
+.button-membership {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    gap: 294px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 144px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12.5px;
+    padding: 25px;
+}
+
+.footer-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon-facebook {
+    flex: 1;
+}
+
+.footer-contact {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+    white-space: pre-line;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+    .header-container,
+    .section,
+    .footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        min-height: 145px;
+        gap: 12.5px;
+    }
+    
+    .conference-cards {
+        flex-direction: column;
+    }
+    
+    .journal-cards-previous {
+        flex-wrap: wrap;
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 20px;
+    }
+
+    .header-logo img {
+        width: 80px;
+    }
+    
+    .header-title {
+        font-size: 14px;
+        width: auto;
+    }
+    
+    .header-subtitle {
+        font-size: 8px;
+        width: auto;
+    }
+    
+    .header-nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        gap: 10px;
+    }
+    
+    .nav-button {
+        font-size: 12px;
+        padding: 7.5px;
+    }
+    
+    .hero {
+        height: 400px;
+    }
+    
+    .section {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .section-paragraph {
+        font-size: 18px;
+    }
+    
+    .conferences-section,
+    .journals-section {
+        padding: 30px 20px;
+    }
+    
+    .membership-section {
+        padding: 50px 20px;
+    }
+    
+    .footer {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    
+    .footer-content {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .header-container {
+        padding-left: 12.5px;
+        padding-right: 12.5px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+    
+    .nav-button {
+        font-size: 10px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    
+}
+
